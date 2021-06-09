@@ -1,0 +1,78 @@
+
+<HTML>
+<HEAD>
+<center><H1> NAME: PRANAV KOPARGAONKAR</H1>
+<H1> REG NO: 20BCY10136</H1></center>
+<title> INFORMATION FORM & GAME </title>
+</head>
+<body bgcolor = aqua text=black link = blue alink = blue vlink = blue leftmargin = 20>
+<hr align = center width = 80% color = white>
+<center>
+<img src = "1.png" width = 900 height = 300>
+</center>
+<hr align = center width = 80% color = white>
+<h1 align = center> INFORMATION FORM </h1>
+<hr align = center width = 40% color = white>
+
+<form align = center action = "mail to: mahrez21kopargaonkar@gmail.com">
+<label type = "text">First Name:</label>
+<input type = "text"><br>
+<label type = "text">Last Name:</label>
+<input type = "text"><br>
+<label type = "text">Email ID:</label>
+<input type = "text"><br>
+<label type = "text">Password:</label>
+<input type = "password"><br>
+<label type = "text">Age:</label>
+<input type = "integer"><br>
+<button type = "reset">RESET</button>
+<button type = "Submit"><a href = "SUBMISSION.HTML">SUBMIT</a></button>
+</form>
+<hr align = center width = 80% color = white>
+
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-right {
+  position: absolute;
+  top: 4px;
+  right: 490px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 150px;
+  right: 670px;
+}
+
+</style>
+
+<div class = "container">
+<center>
+  <img src = "2.png" width = 900 height = 600>
+</center> 
+ <div class = "top-right" color = white><h1>NUMBER GUESSING GAME</h1></div>
+ <div class = "bottom-right" color = white><center><button onClick = "guessno()"> Click here </button></center>
+</div>
+<script>
+function guessno(){
+
+const random = Math.floor(Math.random()*10) + 1;
+let number = parseInt(prompt("Guess a number from 1 to 10"));
+while(number !== random){
+    number = parseInt(prompt("Guess a number from 1 to 10"));
+}
+
+if (number == random){
+    alert("You guessed the correct no.")
+}
+}
+</script>
+<hr align = center width = 100% color = white>
+</body>
+</html>
